@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Sets the character encoding so text and symbols display correctly. -->
+  <meta charset="UTF-8">
+  <!-- Makes the layout scale correctly on phones, tablets, and desktops. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Short description used by search engines and link previews. -->
+  <meta name="description" content="The personal portfolio of Chinagorom Festus, showcasing web development, software, AI, and creative projects.">
+  <title>Chinagorom Festus | Developer Portfolio</title>
+  <!-- Preconnect helps the browser prepare to load fonts from Google Fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Sora is used for headings; Inter is used for readable body text. -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Main stylesheet is kept in its own file for easy editing. -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Main JavaScript is deferred so the HTML can render before scripts run. -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Adds a skip link for keyboard and screen-reader accessibility. -->
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Sticky navigation: links jump to sections and JavaScript marks the active link. -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Chinagorom Festus home">CF<span>.</span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+      <a class="nav-cta" href="#contact">Let's Talk <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO SECTION STARTS: fills at least the full desktop viewport. -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <!-- Decorative CSS-only shapes; hidden from assistive technology. -->
+      <div class="hero-shapes" aria-hidden="true">
+        <div class="shape shape-cube cube-one"></div>
+        <div class="shape shape-cube cube-two"></div>
+        <div class="shape shape-orb orb-one"></div>
+        <div class="shape shape-orb orb-two"></div>
+        <div class="shape shape-ring"></div>
+      </div>
+
+      <div class="hero-content container">
+        <p class="eyebrow hero-eyebrow"><span class="status-dot"></span> Curious mind. Creative builder.</p>
+        <!-- Replace the placeholder image URL with your own photo when ready. -->
+        <div class="profile-frame">
+          <img src="p.png" id="profile-pic" alt="Placeholder portrait for Chinagorom Festus">
+        </div>
+        <h1 id="hero-title" class="hero-title">Chinagorom <span>Festus</span></h1>
+        <!-- JavaScript rotates the professional titles in this element. -->
+        <p class="hero-role">I create as a <span id="role-word">Web Developer</span><span class="type-caret" aria-hidden="true">|</span></p>
+        <p class="hero-description">Turning ideas into useful digital experiences, one project at a time.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#projects">View My Projects <span aria-hidden="true">↓</span></a>
+          <a class="button button-glass" href="#contact">Contact Me <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-footnote"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>AI + Creativity</span></div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About section"><span></span> Scroll to explore</a>
+    </section>
+    <!-- HERO SECTION ENDS -->
+
+    <!-- ABOUT SECTION STARTS: glass card contains introduction and skill meters. -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">A little about me</p>
+          <h2>Curiosity is my <span class="text-gradient">superpower.</span></h2>
+          <p class="section-intro">I enjoy learning how technology works and using it to build things that people can use.</p>
+        </div>
+
+        <div class="about-card glass-card reveal">
+          <div class="about-copy">
+            <span class="card-index">01 / ABOUT</span>
+            <h3>Hello, world! <span aria-hidden="true">✦</span></h3>
+            <p>Am Chinagorom Festus, a curious and passionate web developer, software engineer, prompt engineer, AI expert, video editor and more.</p>
+            <p class="dob-line"><span class="dob-icon" aria-hidden="true">✦</span> Date of Birth: 10 February 2010</p>
+            <div class="about-tags"><span>Problem solver</span><span>Always learning</span><span>Creative thinker</span></div>
+          </div>
+
+          <div class="skills-panel">
+            <div class="skills-title-row"><h3>Skills in progress</h3><span>MY TOOLKIT</span></div>
+            <!-- Each data-level controls the animated width of the corresponding skill bar. -->
+            <div class="skill-item" data-level="100"><div class="skill-label"><span>HTML</span><span>100%</span></div><div class="skill-track"><span class="skill-fill"></span></div></div>
+            <div class="skill-item" data-level="100"><div class="skill-label"><span>CSS</span><span>100%</span></div><div class="skill-track"><span class="skill-fill"></span></div></div>
+            <div class="skill-item" data-level="100"><div class="skill-label"><span>JavaScript</span><span>100%</span></div><div class="skill-track"><span class="skill-fill"></span></div></div>
+            <div class="skill-item" data-level="100"><div class="skill-label"><span>Python</span><span>100%</span></div><div class="skill-track"><span class="skill-fill"></span></div></div>
+            <div class="skill-item" data-level="100"><div class="skill-label"><span>AI & Prompting</span><span>100%</span></div><div class="skill-track"><span class="skill-fill"></span></div></div>
+            <div class="skill-item" data-level="100"><div class="skill-label"><span>Video Editing</span><span>100%</span></div><div class="skill-track"><span class="skill-fill"></span></div></div>
+            
+          </div>
+        </div>
+
+        <!-- Small stats cards add visual rhythm; edit these values whenever you want. -->
+        <div class="stats-grid reveal">
+          <div class="stat-card"><strong>04<span>+</span></strong><span>Project concepts</span></div>
+          <div class="stat-card"><strong>06</strong><span>Core skill areas</span></div>
+          <div class="stat-card"><strong>∞</strong><span>Things to learn</span></div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT SECTION ENDS -->
+
+    <!-- PROJECTS SECTION STARTS: project data is written as HTML cards for easy editing. -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected experiments</p>
+          <h2>My <span class="text-gradient">Projects</span></h2>
+          <p class="section-intro">A few sample builds and concepts.</p>
+        </div>
+
+        <!-- The centered down arrow toggles all project detail panels. -->
+        <button class="expand-all" id="expand-all" aria-expanded="false"><span>▼</span> <span id="expand-all-label">Explore project details</span></button>
+
+        <div class="projects-list">
+          <!-- PROJECT 1: change the title, image URL, description, and href to your real project. -->
+          <article class="project-card reveal" data-project="fashion">
+            <div class="project-topline"><span class="project-number">01</span><span class="project-category">E-COMMERCE</span></div>
+            <div class="project-grid">
+              <div class="project-copy"><h3>Jamb mock website</h3><p>A jamb mock website i created for saldefi students to.practice JAMB.</p><a class="button button-gradient" href="https://jamb-mock.vercel.app" target="_blank" rel="noopener noreferrer">See My Project <span aria-hidden="true">↗</span></a></div>
+              <div class="project-image-wrap"><img src="jm.png" alt="jamb mock project image" loading="lazy"></div>
+            </div>
+            <button class="project-toggle" aria-expanded="false" aria-label="Show details for jamb mock website"><span>▼</span></button>
+            <div class="project-details" hidden><div class="details-inner"><h4>Project details</h4><p>earlier on 2026 our class teacher mentioned he needed a mock website for jamb but developers were charging him much,by then i was still getting used to HTML,CSS and Javascript but i told him i can do it and i built  this amazing jamb website for our school,note this is meant for  laptops and bigger screens</p><div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><p><strong>Project link:</strong> <a href="https://jamb-mock.vercel.app" target="_blank" rel="noopener noreferrer">Jamb-mock website</a></p></div></div>
+          </article>
+
+          <!-- PROJECT 2: a placeholder for your football game. -->
+          <article class="project-card reveal" data-project="football">
+            <div class="project-topline"><span class="project-number">02</span><span class="project-category">GAME DEVELOPMENT</span></div>
+            <div class="project-grid">
+              <div class="project-copy"><h3>Football Game</h3><p>A fun browser football game concept with responsive controls, match flow, and an energetic pitch-inspired design.</p><a class="button button-gradient" href="https://kiddiesball.netlify.app" target="_blank" rel="noopener noreferrer">See My Project <span aria-hidden="true">↗</span></a></div>
+              <div class="project-image-wrap"><img src="ball.png" alt="Placeholder football game project image" loading="lazy"></div>
+            </div>
+            <button class="project-toggle" aria-expanded="false" aria-label="Show details for Football Game"><span>▼</span></button>
+            <div class="project-details" hidden><div class="details-inner"><h4>Project details</h4><p>A browser-based game concept.I built with different AI assistants.</p><div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><p><strong>Project link:</strong> <a href="https://kiddiesball.netlify.app" target="_blank" rel="noopener noreferrer">KiddiesBall</a></p></div></div>
+          </article>
+
+          <!-- PROJECT 3: a placeholder for an AI assistant concept. -->
+          <article class="project-card reveal" data-project="assistant">
+            <div class="project-topline"><span class="project-number">03</span><span class="project-category">Ify store</span></div>
+            <div class="project-grid">
+              <div class="project-copy"><h3>Local store Price Checker</h3><p>A provision price checker i built for a local retailer</p><a class="button button-gradient" href="https://ifystore.vercel.app" target="_blank" rel="noopener noreferrer">See My Project <span aria-hidden="true">↗</span></a></div>
+              <div class="project-image-wrap"><img src="if.png" alt="Placeholder AI chat assistant project image" loading="lazy"></div>
+            </div>
+            <button class="project-toggle" aria-expanded="false" aria-label="Show details for AI Chat Assistant"><span>▼</span></button>
+            <div class="project-details" hidden><div class="details-inner"><h4>Project details</h4><p>A local retailer met me and said she needed a website that will allow her customers to know the price of goods and servicrs before coming to the shop,.this prevented coming and going back for her customers</p><div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>AI API</span></div><p><strong>Project link:</strong> <a href="https://ifystore.vercel.app" target="_blank" rel="noopener noreferrer">Ifystore</a></p></div></div>
+          </article>
+
+          <!-- PROJECT 4: a placeholder for video-editing samples. -->
+          <article class="project-card reveal" data-project="video">
+            <div class="project-topline"><span class="project-number">04</span><span class="project-category">CREATIVE MEDIA</span></div>
+            <div class="project-grid">
+              <div class="project-copy"><h3>Video Editing Portfolio</h3><p>A visual home for short-form edits, motion experiments, storytelling clips, and creative video work.</p><a class="button button-gradient" href="#" target="_blank" rel="noopener noreferrer">See My Project <span aria-hidden="true">↗</span></a></div>
+              <div class="project-image-wrap"><img src="p.png" alt="Placeholder video editing project image" loading="lazy"></div>
+            </div>
+            <button class="project-toggle" aria-expanded="false" aria-label="Show details for Video Editing Portfolio"><span>▼</span></button>
+            <div class="project-details" hidden><div class="details-inner"><h4>Project details</h4><p>am a professional video editor who edits videos for pages like <a href = "https://facebook.com/glorianwaonutv1">Gloria Nwaonu tv</a>.</p><div class="tech-tags"><span>Editing</span><span>Storytelling</span><span>Motion</span></div><p><strong>Project link:</strong> <a href="https://facebook.com/glorianwaonutv1" target="_blank" rel="noopener noreferrer">View my work</a></p></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- PROJECTS SECTION ENDS -->
+
+    <!-- CONTACT SECTION STARTS: the form opens WhatsApp with a pre-filled message; it does not send email. -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="contact-copy reveal">
+            <p class="eyebrow">Have an idea?</p>
+            <h2>Let's make<br><span class="text-gradient">something great.</span></h2>
+            <p>Have a project, question, or collaboration in mind? Send a message and let's talk about it.</p>
+            <div class="contact-availability"><span class="status-dot"></span> Open to interesting projects</div>
+            <div class="social-links">
+              <!-- Replace the dummy GitHub URL with your real profile. -->
+              <a class="social-link" href="https://github.com/KingOzy7" target="_blank" rel="noopener noreferrer" aria-label="GitHub placeholder link"><span aria-hidden="true">GH</span><span>GitHub</span><b aria-hidden="true">↗</b></a>
+              <a class="social-link" href="https://wa.me/2349075148466" target="_blank" rel="noopener noreferrer" aria-label="Contact on WhatsApp"><span aria-hidden="true">WA</span><span>WhatsApp</span><b aria-hidden="true">↗</b></a>
+              <!-- Replace the dummy email address with your own email. -->
+              <a class="social-link" href="mailto:ozyairdrop7@gmail.com" aria-label="Email placeholder link"><span aria-hidden="true">@</span><span>Email</span><b aria-hidden="true">↗</b></a>
+            </div>
+          </div>
+
+          <form class="contact-form glass-card reveal" id="contact-form">
+            <div class="form-heading"><span class="card-index">02 / CONTACT</span><h3>Send a message</h3><p>We'll open WhatsApp with your message ready to send.</p></div>
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="e.g. Alex" autocomplete="name" required>
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me a little about your idea..." required></textarea>
+            <button class="button button-dark form-submit" type="submit">Continue to WhatsApp <span aria-hidden="true">↗</span></button>
+            <p class="form-note" id="form-note" aria-live="polite">This form opens WhatsApp; it does not send an email automatically.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT SECTION ENDS -->
+  </main>
+
+  <!-- Footer gives the page a simple closing section and automatically updates the year. -->
+  <footer class="site-footer">
+    <div class="container footer-inner"><a class="brand" href="#top">CF<span>.</span></a><p>Built with curiosity by Chinagorom Festus.</p><a href="#top" class="back-top">Back to top ↑</a><span class="copyright">© <span id="year"></span></span></div>
+  </footer>
+</body>
+</html>
